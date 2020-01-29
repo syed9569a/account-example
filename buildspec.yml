@@ -1,12 +1,11 @@
 version: 0.2
 
 phases: 
-    install: 
+    install:
+        runtime-versions:
+            java: corretto11
         commands: 
             - echo Entered the install phase ...
-            - apt-get update -y && apt-get upgrade -y
-            - apt-get install openjdk-8-jdk -y
-            - apt-get install maven -y
     build:
         commands: 
             - echo Entered the build phase ...
