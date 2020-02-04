@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: ./account-example-0.0.1-SNAPSHOT.jar
+    destination: /data/account/
+hooks:
+  BeforeInstall:
+    - location: scripts/before_installation.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/installation.sh
+      timeout: 300
+      runas: root
+
