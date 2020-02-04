@@ -5,15 +5,15 @@ files:
     destination: /data/account/
 hooks:
   BeforeInstall:
-    - location: scripts/before_installation.sh
+    - location: ./before_installation.sh
       timeout: 300
       runas: root
   Install:
-    - location: scripts/installation.sh
+    - location: ./installation.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/after_installation.sh
+    - location: ./after_installation.sh
       timeout: 300
       runas: root
 
