@@ -1,6 +1,3 @@
 #!/bin/bash
 
-java -jar target/*.jar > /var/log/java.service &
-
-echo $(pwd) > /var/log/java.service
-
+java -jar /data/account/*.jar > /var/log/java.service &
