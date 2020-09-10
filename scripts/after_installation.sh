@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar /data/account/*.jar > /var/log/java.service &
+java -jar target/*.jar > /var/log/java.service &
